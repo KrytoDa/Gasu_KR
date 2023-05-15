@@ -1,5 +1,5 @@
 INSERT INTO 
-    categories_of_item
+    CW_categories_of_item
 VALUES
     (1, 'Обувь', 'изделие для предохранения ног от внешних воздействий и несущее утилитарные и эстетические функции.'),
     (2, 'Аксессуары', 'необязательный предмет, сопутствующий чему-либо; принадлежность чего-либо. Может улучшить, украсить или дополнить что-либо.'),
@@ -14,7 +14,7 @@ VALUES
    
    
 INSERT INTO 
-    item 
+    CW_item
 VALUES
     (1,'кроссовки adidas', 'Кроссовки adidas по доступной цене.',  15, 2803, 5.0, 'Эти кроссовки муж уже относил 3 года и они выглядят почти как новые. Качество очень хорошее.'),
     (2,'Сумка DIOR', 'Откройте для себя сумки из последней коллекции для женщин на Dior.com.',  5, 15467, 3.0, 'Подарили на ДР сумку Lady Dior (оригинал). С первого же дня эта сумка стала как колокольчик прокаженного, на работе обсмеяли, что повелась на подделку.'),
@@ -26,7 +26,7 @@ VALUES
     (8,'Лоперамид', 'Лучшее средство при отравлении.',  754, 650, 5.0, 'Реально лучше всего помогает.');
     
 INSERT INTO 
-	categ_and_item
+	CW_categ_and_item
 VALUES
 	(1, 1),
 	(2, 2),
@@ -39,7 +39,7 @@ VALUES
 
 
 INSERT INTO 
-    k_customers 
+    CW_k_customers 
 VALUES
     (1, '32313241324@mail.ru', 'lol2334431234', 'Ivan', ' Ivanov', 'lomonosova 24'),
     (2, '323141324@mail.ru', 'lol23342141234', 'Ivan1', ' Ivanov1', 'lomonosova 25'),
@@ -52,7 +52,7 @@ VALUES
    
    
  INSERT INTO 
- 	shopping_cart
+ 	CW_shopping_cart
  VALUES
  	(1, 1, 2),
  	(1, 2, 1),
@@ -61,18 +61,19 @@ VALUES
  
  
  INSERT INTO 
-    k_order 
+    CW_k_order 
 VALUES
     (1, 'delivered', '1999-01-08', 5, 1, 1),
     (2, 'delivered', '2016-02-08', 1, 1, 2),
 	(3, 'delivered', '2018-02-08', 1, 1, 3),
     (4, 'not delivered', '2017-01-08', 2, 2, 1),
-    (5, 'not delivered', '2019-02-10', 3, 3, 4);
+    (5, 'not delivered', '2019-02-10', 3, 3, 4),
+    (6, 'not delivered', Null, 2, 3, 6);
+   
    
    
  INSERT INTO 
-    ordered_item 
+    CW_ordered_item 
 VALUES
 	(1, 1),
 	(1, 2);
- 	
